@@ -1,9 +1,0 @@
-TAREAS:
-
-[ ] Enviar escrito al profesor
-[ ] Realizar escrito para el coloquio
-[ ] Evaluar la red neuronal con los datos locales
-[ ] Evaluar la red neuronal
-[ ] Validar información con los datos locales
-	[ ] Exploración de los datos locales
-	[ ] Transformación de variables
