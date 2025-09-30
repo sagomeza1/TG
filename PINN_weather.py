@@ -590,4 +590,9 @@ for epoch in range(num_epochs):
                             'Train_loss' : train_loss_results, 'NS_loss' : NS_loss_results,
                             'P_loss' : P_loss_results, 'U_loss' : U_loss_results, 'V_loss' : V_loss_results}) # Change ending of the .mat name according to validation case selected: close, far or envelope
 
+        # -------- NUEVO: Guardar el modelo completo (arquitectura + pesos) --------
+        model_filename = 'PINN_model_epoch_%s_lambda_%s_R_%s' % (str(epoch + 1), str(lamb), str(R))
+        model.save(model_filename)
+        print(f"Modelo guardado en: {model_filename}")   
+
 print('Process completed')
