@@ -6,6 +6,7 @@ import tensorflow as tf
 physical_devices = tf.config.list_physical_devices('GPU')
 availale_GPUs = len(physical_devices) 
 print('Using TensorFlow version: ', tf.__version__, ', GPU:', availale_GPUs)
+input()
 if physical_devices:
     try:
         for gpu in physical_devices:
@@ -21,7 +22,7 @@ import datetime as dt
 import tensorflow_addons as tfa
 
 # Extract data from dataset
-WS_data = scipy.io.loadmat('Weather_data.mat')
+WS_data = scipy.io.loadmat('data\\Weather_data.mat')
 
 # Convert date to continuous time: from date and time format to seconds
 date_0 = WS_data['Date'][0]
